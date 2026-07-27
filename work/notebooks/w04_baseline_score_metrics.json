@@ -1,0 +1,22 @@
+{
+  "assignment": "ML-07 baseline action score",
+  "n_rows": 30000,
+  "visibility_floor_impressions_90d": 300,
+  "signal_verdicts": {
+    "staleness_vs_decline": "MIXED (peaks at 91-180 days, drops at 181+)",
+    "ctr_vs_position": "CONFIRMED (mostly monotonic, one wrinkle at striking vs page_3_5)"
+  },
+  "reason_code_counts": {
+    "no_flag": 11638,
+    "ctr_underperforms_position": 9191,
+    "stale_visible_page": 5283,
+    "stale_and_ctr_gap": 3888
+  },
+  "base_decline_rate": 0.542,
+  "precision_at_k": {
+    "20": 0.65,
+    "50": 0.52,
+    "100": 0.53
+  },
+  "weak_pick_note": "impression-volume tiebreaker underperforms inside the stale_and_ctr_gap group (group decline rate vs top-50-by-tiebreaker decline rate)"
+}
